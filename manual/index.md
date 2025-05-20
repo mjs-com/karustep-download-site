@@ -12,7 +12,7 @@
 個人情報保護のため、ご使用になるGoogleアカウントは必ず２段階認証を採用してください。
 
 # ライセンス認証
-解説動画：○○○○
+解説動画：[https://youtu.be/wvhne6F1QDA](https://youtu.be/wvhne6F1QDA)
 
 ダウンロードサイト： [https://mjs-com.github.io/karustep-download-site/](https://mjs-com.github.io/karustep-download-site/)
 
