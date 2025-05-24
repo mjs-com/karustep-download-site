@@ -64,7 +64,7 @@ Azureアカウントのセキュリティを強化するため、2段階認証�
 以上で、2段階認証の設定は完了です。これにより、アカウントのセキュリティが向上します。
 
 ## Azureの委任手続き
-解説動画： [https://youtu.be/BYugFJNm2Bw](https://youtu.be/BYugFJNm2Bw)
+解説動画： [https://youtu.be/FyNI4saCLik](https://youtu.be/FyNI4saCLik)
 
 カルステップでは、Azureサービスによる文字起こしや生成AIの機能を利用します。これらの詳細な設定作業をカルステップ運営にお任せいただくための委任設定についてご説明します。
 
