@@ -27,7 +27,7 @@
 以下、設定手順をご説明いたします。
 
 ## Azureアカウント開設
-解説動画： [https://youtu.be/2_lAmjdG-D8](https://youtu.be/2_lAmjdG-D8)
+解説動画： <a href="https://youtu.be/2_lAmjdG-D8" target="_blank" rel="noopener noreferrer">https://youtu.be/2_lAmjdG-D8</a>
 
 1.  Googleなどの検索エンジンで「Azure」と検索し、「Microsoft Azure」の公式サイトをクリックしてください。
 2.  Azureのページが表示されたら、「Azure を無料でお試しください」をクリックします。
@@ -45,7 +45,7 @@
 上記の手順が完了すると、Azureアカウントの登録は終了です。これで、Azureの各種サービスが利用可能な状態になります。
 
 ## 2段階認証の設定
-解説動画： [https://youtu.be/2qsM79MaTkQ](https://youtu.be/2qsM79MaTkQ)
+解説動画： <a href="https://youtu.be/2qsM79MaTkQ" target="_blank" rel="noopener noreferrer">https://youtu.be/2qsM79MaTkQ</a>
 
 Azureアカウントのセキュリティを強化するため、2段階認証の設定を強く推奨いたします。
 
@@ -68,7 +68,7 @@ Azureアカウントのセキュリティを強化するため、2段階認証�
 以上で、2段階認証の設定は完了です。これにより、アカウントのセキュリティが向上します。
 
 ## Azureの委任手続き
-解説動画： [https://youtu.be/FyNI4saCLik](https://youtu.be/FyNI4saCLik)
+解説動画： <a href="https://youtu.be/FyNI4saCLik" target="_blank" rel="noopener noreferrer">https://youtu.be/FyNI4saCLik</a>
 
 カルステップでは、Azureサービスによる文字起こしや生成AIの機能を利用します。これらの詳細な設定作業をカルステップ運営にお任せいただくための委任設定についてご説明します。
 
@@ -122,7 +122,7 @@ Azureアカウントのセキュリティを強化するため、2段階認証�
 ご連絡をいただき次第、正式版のAPI-keyを発行させていただきます。お手数をおかけしますが、どうぞよろしくお願い致します。
 
 ## カルステップへのAPI-keyなどの登録
-解説動画： [https://youtu.be/oCLn4hZQPRw](https://youtu.be/oCLn4hZQPRw)
+解説動画： <a href="https://youtu.be/oCLn4hZQPRw" target="_blank" rel="noopener noreferrer">https://youtu.be/oCLn4hZQPRw</a>
 
 Azureの委任手続きが完了したことをカルステップ運営が確認次第、文字起こしや要約に使用するAPI-keyを発行いたします。発行されたAPI-keyなど、カルステップに登録が必要な情報は、まとめてHTML形式の添付ファイルとしてメールでお送りします。
 
@@ -151,7 +151,7 @@ Azureの委任手続きが完了したことをカルステップ運営が確認
 以上で、カルステップへのAPIキーなどの登録は完了です。これでカルステップの全機能が正式版としてご利用いただけるようになります。
 
 ## カルステップの月額利用料について（Azure利用料の確認方法）
-解説動画： [https://youtu.be/2DVJKqh7aqU](https://youtu.be/2DVJKqh7aqU)
+解説動画： <a href="https://youtu.be/2DVJKqh7aqU" target="_blank" rel="noopener noreferrer">https://youtu.be/2DVJKqh7aqU</a>
 
 正式版では、カルステップで利用するAzureサービスの月額利用料（ランニングコスト）がお客様のAzureアカウントに直接請求されます。利用料金を把握する方法についてご説明します。
 

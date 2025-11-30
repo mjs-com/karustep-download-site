@@ -5,7 +5,7 @@
 ご不明な点がございましたら、担当者 丸山（ [mjsc0mpa2@gmail.com](mailto:mjsc0mpa2@gmail.com) ） までいつでもご相談ください。
 
 # googleスプレッドシートの共有
-解説動画： [https://youtu.be/VYT80F02riw](https://youtu.be/VYT80F02riw)
+解説動画： <a href="https://youtu.be/VYT80F02riw" target="_blank" rel="noopener noreferrer">https://youtu.be/VYT80F02riw</a>
 
 1. 運営（ mjsc0mpa2@gmail.com ）にクリニックで使用されるGoogleアカウント（gmailなど）をお知らせください。（googleフォームで回答済の方は省略可能です）
 2. 運営より、あなた専用のGoogleスプレッドシートの共有連絡がメールで届きます。
@@ -14,7 +14,7 @@
 個人情報保護のため、ご使用になるGoogleアカウントは必ず２段階認証を採用してください。
 
 # ライセンス認証
-解説動画：[https://youtu.be/mWNne-xiKKE](https://youtu.be/mWNne-xiKKE)
+解説動画：<a href="https://youtu.be/mWNne-xiKKE" target="_blank" rel="noopener noreferrer">https://youtu.be/mWNne-xiKKE</a>
 
 ダウンロードサイト： [https://mjs-com.github.io/karustep-download-site/](https://mjs-com.github.io/karustep-download-site/)
 
@@ -27,7 +27,7 @@
 
 # Azureアカウント開設と委任の設定
 ## Azureアカウント開設
-解説動画： [https://youtu.be/2_lAmjdG-D8](https://youtu.be/2_lAmjdG-D8)
+解説動画： <a href="https://youtu.be/2_lAmjdG-D8" target="_blank" rel="noopener noreferrer">https://youtu.be/2_lAmjdG-D8</a>
 
 1.  Googleなどの検索エンジンで「Azure」と検索し、「Microsoft Azure」の公式サイトをクリックしてください。
 2.  Azureのページが表示されたら、「Azure を無料でお試しください」をクリックします。
@@ -44,7 +44,7 @@
 上記の手順が完了すると、Azureアカウントの登録は終了です。これで、Azureの各種サービスが利用可能な状態になります。
 
 ## 2段階認証の設定
-解説動画： [https://youtu.be/2qsM79MaTkQ](https://youtu.be/2qsM79MaTkQ)
+解説動画： <a href="https://youtu.be/2qsM79MaTkQ" target="_blank" rel="noopener noreferrer">https://youtu.be/2qsM79MaTkQ</a>
 
 Azureアカウントのセキュリティを強化するため、2段階認証の設定を強く推奨いたします。
 
@@ -64,7 +64,7 @@ Azureアカウントのセキュリティを強化するため、2段階認証�
 以上で、2段階認証の設定は完了です。これにより、アカウントのセキュリティが向上します。
 
 ## Azureの委任手続き
-解説動画： [https://youtu.be/FyNI4saCLik](https://youtu.be/FyNI4saCLik)
+解説動画： <a href="https://youtu.be/FyNI4saCLik" target="_blank" rel="noopener noreferrer">https://youtu.be/FyNI4saCLik</a>
 
 カルステップでは、Azureサービスによる文字起こしや生成AIの機能を利用します。これらの詳細な設定作業をカルステップ運営にお任せいただくための委任設定についてご説明します。
 
@@ -119,7 +119,7 @@ Azureアカウントのセキュリティを強化するため、2段階認証�
 ご連絡をいただき次第、API-keyを発行させていただきます。お手数をおかけしますが、どうぞよろしくお願い致します。
 
 ## カルステップへのAPI-keyなどの登録
-解説動画： [https://youtu.be/oCLn4hZQPRw](https://youtu.be/oCLn4hZQPRw)
+解説動画： <a href="https://youtu.be/oCLn4hZQPRw" target="_blank" rel="noopener noreferrer">https://youtu.be/oCLn4hZQPRw</a>
 
 Azureの委任手続きが完了したことをカルステップ運営が確認次第、文字起こしや要約に使用するAPI-keyを発行いたします。発行されたAPI-keyなど、カルステップに登録が必要な情報は、まとめてHTML形式の添付ファイルとしてメールでお送りします。
 
@@ -148,9 +148,9 @@ Azureの委任手続きが完了したことをカルステップ運営が確認
 以上で、カルステップへのAPIキーなどの登録は完了です。これでカルステップの全機能がご利用いただけるようになります。設定お疲れ様でした！
 
 # カルステップの使用方法
-カルステップ実演動画： [https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ](https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ)
+カルステップ実演動画： <a href="https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ" target="_blank" rel="noopener noreferrer">https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ</a>
 
-カルステップ使用方法解説動画： [https://youtu.be/40IkbkaXB9o](https://youtu.be/40IkbkaXB9o)
+カルステップ使用方法解説動画： <a href="https://youtu.be/40IkbkaXB9o" target="_blank" rel="noopener noreferrer">https://youtu.be/40IkbkaXB9o</a>
 
 
 カルステップの基本的な使用方法について、フットスイッチでの操作を軸にご説明します。
@@ -233,7 +233,7 @@ Azureの委任手続きが完了したことをカルステップ運営が確認
 
 
 # カルステップのシステムプロンプトと補正辞書の編集方法
-解説動画： [https://youtu.be/9_5bIymDD3Q](https://youtu.be/9_5bIymDD3Q)
+解説動画： <a href="https://youtu.be/9_5bIymDD3Q" target="_blank" rel="noopener noreferrer">https://youtu.be/9_5bIymDD3Q</a>
 
 カルステップでは、AIによる文字起こしや要約の精度、さらには出力される情報の形式を、診療科や状況に合わせてより最適化するために、システムプロンプトと補正辞書を編集する機能を提供しています。
 
@@ -274,7 +274,7 @@ Azureの委任手続きが完了したことをカルステップ運営が確認
 
 
 ## Google Chrome拡張機能「コピペ for カルステップ」の使い方
-解説動画： [https://youtu.be/1KvAidC7mGs](https://youtu.be/1KvAidC7mGs)
+解説動画： <a href="https://youtu.be/1KvAidC7mGs" target="_blank" rel="noopener noreferrer">https://youtu.be/1KvAidC7mGs</a>
 
 クラークやシュライバーの方が、カルステップで生成された要約をより効率的にカルテへ転記するためのGoogle Chrome拡張機能です。
 
@@ -321,7 +321,7 @@ Azureの委任手続きが完了したことをカルステップ運営が確認
 この流れにより、最新の要約内容をスムーズにカルテへ転記することができます。
 
 ## カルステップの月額利用料について（Azure利用料の確認方法）
-解説動画： [https://youtu.be/2DVJKqh7aqU](https://youtu.be/2DVJKqh7aqU)
+解説動画： <a href="https://youtu.be/2DVJKqh7aqU" target="_blank" rel="noopener noreferrer">https://youtu.be/2DVJKqh7aqU</a>
 
 カルステップで利用するAzureサービスの月額利用料（ランニングコスト）をご自身で把握する方法についてご説明します。
 

@@ -7,17 +7,17 @@
 **【ご注意】トライアル期間について**
 無料トライアル期間（1週間）終了後、端末ライセンスとAPIキーが自動的に無効化されます。継続してご利用をご希望の場合は、正式版のご購入をご検討ください。
 
-# googleスプレッドシートの共有
-解説動画： [https://youtu.be/VYT80F02riw](https://youtu.be/VYT80F02riw)
+# Googleスプレッドシートの共有
+解説動画： <a href="https://youtu.be/VYT80F02riw" target="_blank" rel="noopener noreferrer">https://youtu.be/VYT80F02riw</a>
 
-1. 運営（ mjsc0mpa2@gmail.com ）にクリニックで使用されるGoogleアカウント（gmailなど）をお知らせください。（googleフォームで回答済の方は省略可能です）
+1. 運営（ mjsc0mpa2@gmail.com ）にクリニックで使用されるGoogleアカウント（gmailなど）をお知らせください。（Googleフォームで回答済の方は省略可能です）
 2. 運営より、あなた専用のGoogleスプレッドシートの共有連絡がメールで届きます。
 3. 続いて、「スプレッドシートのオーナーとして招待されました」というメールが届くので、「承諾」してください。
 上記の作業により、スプレッドシートの所有権があなたに移譲されます。運営は共有メンバーから抜けるので、このスプレッドシートはあなたのアカウントしか閲覧・編集できない状態となります。
 個人情報保護のため、ご使用になるGoogleアカウントは必ず２段階認証を採用してください。
 
 # ライセンス認証
-解説動画：[https://youtu.be/mWNne-xiKKE](https://youtu.be/mWNne-xiKKE)
+解説動画：<a href="https://youtu.be/mWNne-xiKKE" target="_blank" rel="noopener noreferrer">https://youtu.be/mWNne-xiKKE</a>
 
 ダウンロードサイト： [https://mjs-com.github.io/karustep-download-site/](https://mjs-com.github.io/karustep-download-site/)
 
@@ -29,7 +29,7 @@
 5. 運営よりライセンス登録完了のメールが届いたら完了です。
 
 # カルステップへのAPI-keyなどの登録（トライアル版）
-解説動画： [https://youtu.be/oCLn4hZQPRw](https://youtu.be/oCLn4hZQPRw)
+解説動画： <a href="https://youtu.be/oCLn4hZQPRw" target="_blank" rel="noopener noreferrer">https://youtu.be/oCLn4hZQPRw</a>
 
 トライアル版では、運営が準備したデモ用のAPIキーをご利用いただきます。これにより、Azure関連の複雑な設定作業なしに、すぐにカルステップの全機能をお試しいただけます。
 
@@ -63,9 +63,9 @@
 以上で、カルステップへのAPIキーなどの登録は完了です。これでカルステップの全機能がご利用いただけるようになります。設定お疲れ様でした！
 
 # カルステップの使用方法
-カルステップ実演動画： [https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ](https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ)
+カルステップ実演動画： <a href="https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ" target="_blank" rel="noopener noreferrer">https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ</a>
 
-カルステップ使用方法解説動画： [https://youtu.be/40IkbkaXB9o](https://youtu.be/40IkbkaXB9o)
+カルステップ使用方法解説動画： <a href="https://youtu.be/40IkbkaXB9o" target="_blank" rel="noopener noreferrer">https://youtu.be/40IkbkaXB9o</a>
 
 
 カルステップの基本的な使用方法について、フットスイッチでの操作を軸にご説明します。
@@ -148,7 +148,7 @@
 
 
 # カルステップのシステムプロンプトと補正辞書の編集方法
-解説動画： [https://youtu.be/9_5bIymDD3Q](https://youtu.be/9_5bIymDD3Q)
+解説動画： <a href="https://youtu.be/9_5bIymDD3Q" target="_blank" rel="noopener noreferrer">https://youtu.be/9_5bIymDD3Q</a>
 
 カルステップでは、AIによる文字起こしや要約の精度、さらには出力される情報の形式を、診療科や状況に合わせてより最適化するために、システムプロンプトと補正辞書を編集する機能を提供しています。
 
@@ -189,7 +189,7 @@
 
 
 ## Google Chrome拡張機能「コピペ for カルステップ」の使い方
-解説動画： [https://youtu.be/1KvAidC7mGs](https://youtu.be/1KvAidC7mGs)
+解説動画： <a href="https://youtu.be/1KvAidC7mGs" target="_blank" rel="noopener noreferrer">https://youtu.be/1KvAidC7mGs</a>
 
 クラークやシュライバーの方が、カルステップで生成された要約をより効率的にカルテへ転記するためのGoogle Chrome拡張機能です。
 
@@ -259,7 +259,7 @@
 お渡しした備品（フットスイッチなど）は、そのまま継続してご利用ください。追加の手続きは必要ありません。
 
 ### ご購入に至らなかった場合
-大変恐縮でございますが、備品の返送をお願いしております。返送料はユーザー様のご負担となります。レターパックプラス（600円）が現状最安値化と思います。返送先については、トライアル終了時にご案内いたします。
+大変恐縮でございますが、備品の返送をお願いしております。返送料はユーザー様のご負担となります。レターパックプラス（600円）が現状最安値かと思います。返送先については、トライアル終了時にご案内いたします。
 
 ## 正式版購入をご検討の場合
 
