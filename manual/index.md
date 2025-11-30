@@ -16,7 +16,7 @@
 # ライセンス認証
 解説動画：<a href="https://youtu.be/mWNne-xiKKE" target="_blank" rel="noopener noreferrer">https://youtu.be/mWNne-xiKKE</a>
 
-ダウンロードサイト： [https://mjs-com.github.io/karustep-download-site/](https://mjs-com.github.io/karustep-download-site/)
+ダウンロードサイト： <a href="https://mjs-com.github.io/karustep-download-site/" target="_blank" rel="noopener noreferrer">https://mjs-com.github.io/karustep-download-site/</a>
 
 1. 上記URLから最新版のzipファイルをダウンロードしてください。
 2. zipファイルを解凍し、「カルステップ.bat」をダブルクリックするとアプリが起動します。
@@ -280,7 +280,7 @@ Azureの委任手続きが完了したことをカルステップ運営が確認
 
 #### 1. インストール
 1.  以下のURLから、Chromeウェブストアのページを開きます。
-    [https://chrome.google.com/webstore/detail/kihmejakcdmlddhpdnekdbnlpgnbgpmp](https://chrome.google.com/webstore/detail/kihmejakcdmlddhpdnekdbnlpgnbgpmp)
+    <a href="https://chrome.google.com/webstore/detail/kihmejakcdmlddhpdnekdbnlpgnbgpmp" target="_blank" rel="noopener noreferrer">https://chrome.google.com/webstore/detail/kihmejakcdmlddhpdnekdbnlpgnbgpmp</a>
 2.  「**Chromeに追加**」ボタンをクリックします。
 3.  確認画面が表示されたら、「**拡張機能を追加**」をクリックします。
 4.  これでインストール完了です。

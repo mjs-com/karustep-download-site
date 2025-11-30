@@ -19,7 +19,7 @@
 # ライセンス認証
 解説動画：<a href="https://youtu.be/mWNne-xiKKE" target="_blank" rel="noopener noreferrer">https://youtu.be/mWNne-xiKKE</a>
 
-ダウンロードサイト： [https://mjs-com.github.io/karustep-download-site/](https://mjs-com.github.io/karustep-download-site/)
+ダウンロードサイト： <a href="https://mjs-com.github.io/karustep-download-site/" target="_blank" rel="noopener noreferrer">https://mjs-com.github.io/karustep-download-site/</a>
 
 1. 上記URLから最新版のzipファイルをダウンロードしてください。
 2. zipファイルを解凍し、「カルステップ.bat」をダブルクリックするとアプリが起動します。
@@ -195,7 +195,7 @@
 
 #### 1. インストール
 1.  以下のURLから、Chromeウェブストアのページを開きます。
-    [https://chrome.google.com/webstore/detail/kihmejakcdmlddhpdnekdbnlpgnbgpmp](https://chrome.google.com/webstore/detail/kihmejakcdmlddhpdnekdbnlpgnbgpmp)
+    <a href="https://chrome.google.com/webstore/detail/kihmejakcdmlddhpdnekdbnlpgnbgpmp" target="_blank" rel="noopener noreferrer">https://chrome.google.com/webstore/detail/kihmejakcdmlddhpdnekdbnlpgnbgpmp</a>
 2.  「**Chromeに追加**」ボタンをクリックします。
 3.  確認画面が表示されたら、「**拡張機能を追加**」をクリックします。
 4.  これでインストール完了です。
@@ -296,7 +296,7 @@
 ### 2. X（旧Twitter）での感想投稿
 カルステップのご感想をX（旧Twitter）でシェアをお願いいたします。投稿の際は「#カルステップ」を添えて、以下の投稿を引用リポストしてください。
 
-対象投稿： [https://x.com/Dr_kurukuru/status/1945487347409412533](https://x.com/Dr_kurukuru/status/1945487347409412533)
+対象投稿： <a href="https://x.com/Dr_kurukuru/status/1945487347409412533" target="_blank" rel="noopener noreferrer">https://x.com/Dr_kurukuru/status/1945487347409412533</a>
 
 皆様のご意見が、より良い製品づくりに繋がります。ご協力のほど、よろしくお願いいたします。
 

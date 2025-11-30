@@ -10,7 +10,7 @@
 ### X（旧Twitter）での感想投稿
 カルステップをより多くのクリニック様に知っていただくため、ご感想をX（旧Twitter）でシェアしていただけますと大変助かります。投稿の際は「#カルステップ」を添えて、以下の投稿を引用リポストしてください。
 
-対象投稿： [https://x.com/Dr_kurukuru/status/1945487347409412533](https://x.com/Dr_kurukuru/status/1945487347409412533)
+対象投稿： <a href="https://x.com/Dr_kurukuru/status/1945487347409412533" target="_blank" rel="noopener noreferrer">https://x.com/Dr_kurukuru/status/1945487347409412533</a>
 
 皆様からの発信が、カルステップの普及と今後のサービス向上に大きく貢献いたします。ご協力のほど、よろしくお願いいたします。
 
