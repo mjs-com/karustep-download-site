@@ -92,7 +92,7 @@
                 オンプレミス環境などの制限で<strong>直接ダウンロードサイトを開けない場合</strong>は、外部の端末でアップデートファイルをダウンロードしてください。
             </p>
             <p>
-                ダウンロードしたファイルを移し、該当のパソコンにインストールし直していただく必要がございます。
+                ダウンロードしたファイルを<strong>USBメモリなどを用いて</strong>移し、該当のパソコンにインストールし直していただく必要がございます。
             </p>
         </section>
 
@@ -142,6 +142,16 @@
                 <span class="inline-block bg-karu-primary text-white text-sm px-2 py-1 rounded">手順A</span>
                 システムプロンプトの引き継ぎ方法
             </h3>
+
+            <figure class="my-4">
+                <img src="../images/programs-folder-location.png"
+                     alt="カルステップフォルダ内に programs フォルダがある場所を示すスクリーンショット"
+                     class="w-full max-w-xl mx-auto rounded-lg border border-karu-bg shadow-sm">
+                <figcaption class="text-center text-sm text-slate-500 mt-2">
+                    カルステップフォルダを開くと <code class="bg-karu-bg px-1.5 py-0.5 rounded text-karu-deep font-mono text-xs">programs</code> フォルダがあります
+                </figcaption>
+            </figure>
+
             <ol class="list-decimal list-inside space-y-2 ml-2 mb-6">
                 <li><strong>古いカルステップフォルダ</strong>を開き、その中の <code class="bg-karu-bg px-2 py-0.5 rounded text-karu-deep font-mono text-sm">programs</code> フォルダに移動します。</li>
                 <li>作成したシステムプロンプトの名称がついた<strong>テキストファイル</strong>をコピーします。</li>
@@ -164,9 +174,9 @@
 ├─ Karustep.bat
 ├─ Karustep-Lighthouse-v2.json
 └─ programs/
-   ├─ dictionary.txt          ← 補正辞書はここ
-   ├─ 内科.txt                ← 自作プロンプトはここ
-   ├─ 整形外科.txt
+   ├─ dictionary.txt                ← 補正辞書はここ
+   ├─ 00. プロブレムリスト形式v2.txt ← 自作プロンプトはここ
+   ├─ 01. 簡潔なSOAP形式.txt
    └─ ...</pre>
             </div>
         </section>

@@ -94,9 +94,6 @@ function renderRelease(r) {
     ? r.body
     : '_（このリリースには変更内容の記載がありません）_';
 
-  // GitHub上のリリースページへのリンク
-  const releaseUrl = `https://github.com/${REPO}/releases/tag/${encodeURIComponent(r.tag_name)}`;
-
   const renderedBody = marked.parse(body);
   const collapse = shouldCollapse(body);
 
@@ -104,7 +101,6 @@ function renderRelease(r) {
             <header class="flex flex-wrap items-baseline gap-3 mb-3 pb-3 border-b border-karu-bg">
                 <h2 class="text-2xl font-bold text-karu-deep">${tag}</h2>
                 <time datetime="${escapeHtml(dateIso)}" class="text-sm text-slate-500">${dateDisplay}</time>
-                <a href="${escapeHtml(releaseUrl)}" target="_blank" rel="noopener" class="ml-auto text-xs text-karu-primary hover:underline">GitHub ↗</a>
             </header>`;
 
   const proseClasses = 'prose prose-slate max-w-none prose-headings:text-karu-deep prose-headings:font-bold prose-a:text-karu-primary prose-code:text-karu-deep prose-code:bg-karu-bg prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:before:content-none prose-code:after:content-none';
@@ -135,7 +131,6 @@ function buildHtml(releases) {
   });
 
   const articles = releases.map(renderRelease).join('\n');
-  const releaseCount = releases.length;
 
   return `<!DOCTYPE html>
 <html lang="ja">
@@ -197,15 +192,9 @@ function buildHtml(releases) {
     <main class="max-w-reading mx-auto px-6 py-10">
         <p class="text-sm text-slate-500 mb-6">
             最終更新: <time datetime="${generatedAt}">${generatedAtDisplay}</time>
-            ・ 全 ${releaseCount} バージョン
-            <span class="block mt-1 text-xs">（このページは GitHub Releases から自動生成されています）</span>
         </p>
 
 ${articles}
-
-        <p class="text-sm text-slate-500 text-center mt-10">
-            最新の更新情報は <a href="https://github.com/${REPO}/releases" class="text-karu-primary hover:underline" target="_blank" rel="noopener">GitHub Releases</a> でもご確認いただけます。
-        </p>
     </main>
 
     <footer class="bg-slate-800 text-slate-300 mt-12">
