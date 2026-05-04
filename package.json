@@ -1,0 +1,16 @@
+{
+  "name": "karustep-download-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "カルステップ ダウンロードサイトのビルドスクリプト群。GitHub Pagesでホスティングする静的サイトの補助スクリプトです。",
+  "type": "module",
+  "scripts": {
+    "build:changelog": "node scripts/generate-changelog.mjs"
+  },
+  "devDependencies": {
+    "marked": "^12.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

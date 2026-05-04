@@ -1,0 +1,66 @@
+# =====================================================================
+# update-changelog.yml
+# ---------------------------------------------------------------------
+# changelog/index.html を GitHub Releases から自動再生成し、
+# 差分があれば自動コミット・プッシュするワークフロー。
+#
+# トリガー:
+#   - リリース操作（公開・編集・削除）時に即座に再生成
+#   - 毎日 00:00 UTC（日本時間 09:00）の安全網
+#   - GitHub Actions UI からの手動実行（workflow_dispatch）
+#
+# 実装ノート:
+#   - Node 18 以上の組み込み fetch を使用
+#   - GITHUB_TOKEN は GitHub Actions が自動付与する
+#   - 生成HTMLは Tailwind CDN を使うので追加のビルドは不要
+# =====================================================================
+
+name: Update Changelog
+
+on:
+  release:
+    types: [published, edited, deleted, released]
+  schedule:
+    - cron: '0 0 * * *'   # 毎日 00:00 UTC（09:00 JST）
+  workflow_dispatch:       # 手動実行用
+
+# 同じワークフローの並行実行を抑制（連続リリース時の競合回避）
+concurrency:
+  group: update-changelog
+  cancel-in-progress: false
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # changelog/index.html のコミット・プッシュに必要
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate changelog/index.html
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run build:changelog
+
+      - name: Commit and push if changed
+        run: |
+          if [[ -n "$(git status --porcelain changelog/index.html)" ]]; then
+            git config user.name  'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add changelog/index.html
+            git commit -m "chore(changelog): auto-update from GitHub Releases"
+            git push
+            echo "::notice::Changelog updated and pushed."
+          else
+            echo "::notice::No changes to changelog. Skipping commit."
+          fi

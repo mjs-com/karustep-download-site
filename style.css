@@ -102,6 +102,43 @@ section h2 {
     color: #555;
 }
 
+#guides .guide-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+#guides .guide-links li {
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    background-color: #f8fbff;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+#guides .guide-links li:hover {
+    background-color: #e7f3fe;
+}
+
+#guides .guide-links a {
+    display: inline-block;
+    color: #005a9e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+#guides .guide-links a:hover {
+    text-decoration: underline;
+}
+
+#guides .guide-desc {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.85em;
+    color: #666;
+}
+
 #features ul {
     list-style: none;
     padding-left: 0;

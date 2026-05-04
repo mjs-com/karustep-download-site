@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="カルステップ アップデートマニュアル。最新版への更新手順、プロンプト・補正辞書の引き継ぎ方法、オンプレミス環境での注意点を解説します。">
+    <title>アップデートマニュアル | カルステップ</title>
+    <link rel="icon" href="../images/icon.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'karu-primary': '#0288d1',
+              'karu-light':   '#4fc3f7',
+              'karu-bg':      '#e1f5fe',
+              'karu-deep':    '#01579b',
+              'karu-soft':    '#f0f9ff',
+              'karu-warn-bg': '#fff8e1',
+              'karu-warn-bd': '#f9a825',
+            },
+            fontFamily: {
+              sans: ['"Hiragino Kaku Gothic ProN"', '"Hiragino Sans"', 'Meiryo', 'sans-serif'],
+            },
+            maxWidth: {
+              'reading': '760px',
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      .toc-link::before { content: "▸ "; color: #0288d1; }
+    </style>
+</head>
+<body class="bg-karu-soft text-slate-800 font-sans leading-relaxed antialiased">
+
+    <!-- Header -->
+    <header class="bg-karu-primary text-white shadow-md">
+        <div class="max-w-reading mx-auto px-6 py-8">
+            <p class="text-sm opacity-90 mb-2">
+                <a href="../" class="hover:underline">← カルステップ ダウンロードページへ戻る</a>
+            </p>
+            <h1 class="text-3xl md:text-4xl font-bold">アップデートマニュアル</h1>
+            <p class="mt-2 text-karu-bg">カルステップを最新版に更新する手順</p>
+        </div>
+    </header>
+
+    <main class="max-w-reading mx-auto px-6 py-10">
+
+        <!-- 目次 -->
+        <nav aria-label="目次" class="bg-white rounded-lg shadow-sm border border-karu-bg p-6 mb-10">
+            <h2 class="text-lg font-bold text-karu-deep mb-3">目次</h2>
+            <ul class="space-y-2 text-base">
+                <li><a href="#section-1" class="toc-link text-karu-primary hover:text-karu-deep hover:underline">アップデートの基本手順</a></li>
+                <li><a href="#section-2" class="toc-link text-karu-primary hover:text-karu-deep hover:underline">オンプレミス環境（VPN等）でご利用の場合</a></li>
+                <li><a href="#section-3" class="toc-link text-karu-primary hover:text-karu-deep hover:underline">v24.0以前のバージョンからアップデートされる方へのご注意</a></li>
+                <li><a href="#section-4" class="toc-link text-karu-primary hover:text-karu-deep hover:underline">アップデートの必要性について</a></li>
+                <li><a href="#section-5" class="toc-link text-karu-primary hover:text-karu-deep hover:underline">自作のシステムプロンプト・補正辞書の引き継ぎ（置き換え）について</a></li>
+            </ul>
+        </nav>
+
+        <!-- 1. 基本手順 -->
+        <section id="section-1" class="bg-white rounded-lg shadow-sm border border-karu-bg p-6 md:p-8 mb-8 scroll-mt-6">
+            <h2 class="text-2xl font-bold text-karu-deep border-l-4 border-karu-primary pl-3 mb-4">
+                1. アップデートの基本手順
+            </h2>
+            <p class="mb-3">
+                アップデートは、<strong>初回インストール時と同じダウンロードサイト</strong>から最新版のファイルをダウンロードしていただく形となります。
+            </p>
+            <p class="mb-3">
+                認証番号やAPIキーなどの情報はパソコン内に保存されているため、新しいバージョンを起動すればそのままご利用いただけます。<strong>アップデートのたびに再度登録し直す必要はございません。</strong>
+            </p>
+            <p class="mb-4">
+                新たなホワイトリスト登録は不要です。
+            </p>
+            <div class="text-center mt-6">
+                <a href="../" class="inline-block bg-karu-primary hover:bg-karu-deep text-white font-bold py-3 px-6 rounded-md shadow transition-colors">
+                    📥 ダウンロードページへ移動する
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. オンプレミス環境 -->
+        <section id="section-2" class="bg-white rounded-lg shadow-sm border border-karu-bg p-6 md:p-8 mb-8 scroll-mt-6">
+            <h2 class="text-2xl font-bold text-karu-deep border-l-4 border-karu-primary pl-3 mb-4">
+                2. オンプレミス環境（VPN等）でご利用の場合
+            </h2>
+            <p class="mb-3">
+                オンプレミス環境などの制限で<strong>直接ダウンロードサイトを開けない場合</strong>は、外部の端末でアップデートファイルをダウンロードしてください。
+            </p>
+            <p>
+                ダウンロードしたファイルを移し、該当のパソコンにインストールし直していただく必要がございます。
+            </p>
+        </section>
+
+        <!-- 3. v24.0以前 -->
+        <section id="section-3" class="bg-white rounded-lg shadow-sm border-l-4 border-karu-warn-bd bg-karu-warn-bg/40 p-6 md:p-8 mb-8 scroll-mt-6">
+            <h2 class="text-2xl font-bold text-karu-deep mb-4 flex items-center gap-2">
+                <span class="text-karu-warn-bd">⚠</span>
+                3. v24.0以前のバージョンからアップデートされる方へのご注意
+            </h2>
+            <p class="mb-3">
+                セキュリティ向上のため、<strong>v24.0以降でスプレッドシート出力のプログラムが変更</strong>され、「Azure Function Key」の項目が追加されました。
+            </p>
+            <p>
+                そのため、v24.0以前のバージョンをご利用いただいていた端末では、アップデート後に<strong class="text-karu-warn-bd">こちらのキー（Azure Function Key）の追加入力が必要</strong>となります。
+            </p>
+        </section>
+
+        <!-- 4. 必要性 -->
+        <section id="section-4" class="bg-white rounded-lg shadow-sm border border-karu-bg p-6 md:p-8 mb-8 scroll-mt-6">
+            <h2 class="text-2xl font-bold text-karu-deep border-l-4 border-karu-primary pl-3 mb-4">
+                4. アップデートの必要性について
+            </h2>
+            <p class="mb-3">
+                アップデート通知が表示された場合でも、<strong>その内容が現在お使いの機能に影響しない場合は、必ずしも更新していただく必要はございません。</strong>
+            </p>
+            <p>
+                「いいえ」をクリックしていただければ、<strong>1ヶ月間は通知が表示されなくなります。</strong>
+            </p>
+            <p class="mt-4 text-sm text-slate-600">
+                💡 各バージョンの変更内容は <a href="../changelog/" class="text-karu-primary font-semibold hover:underline">変更履歴ページ</a> をご確認ください。
+            </p>
+        </section>
+
+        <!-- 5. プロンプト・辞書引き継ぎ -->
+        <section id="section-5" class="bg-white rounded-lg shadow-sm border-2 border-karu-primary p-6 md:p-8 mb-8 scroll-mt-6">
+            <h2 class="text-2xl font-bold text-karu-deep border-l-4 border-karu-primary pl-3 mb-4">
+                5. 自作のシステムプロンプト・補正辞書の引き継ぎ（置き換え）について
+            </h2>
+            <div class="bg-karu-bg/50 border-l-4 border-karu-primary p-4 rounded mb-5">
+                <p class="text-karu-deep">
+                    <strong>⚠ ご注意：</strong>
+                    ご自身でカスタマイズ・作成したオリジナルのシステムプロンプトがある場合、そのままアプリを新しいバージョンに入れ替えると<strong class="text-red-600">データが消えて（初期化されて）しまいます。</strong>
+                </p>
+            </div>
+
+            <h3 class="text-xl font-bold text-karu-deep mt-6 mb-3 flex items-center gap-2">
+                <span class="inline-block bg-karu-primary text-white text-sm px-2 py-1 rounded">手順A</span>
+                システムプロンプトの引き継ぎ方法
+            </h3>
+            <ol class="list-decimal list-inside space-y-2 ml-2 mb-6">
+                <li><strong>古いカルステップフォルダ</strong>を開き、その中の <code class="bg-karu-bg px-2 py-0.5 rounded text-karu-deep font-mono text-sm">programs</code> フォルダに移動します。</li>
+                <li>作成したシステムプロンプトの名称がついた<strong>テキストファイル</strong>をコピーします。</li>
+                <li><strong>新しいカルステップフォルダ</strong>の <code class="bg-karu-bg px-2 py-0.5 rounded text-karu-deep font-mono text-sm">programs</code> フォルダに、コピーしたファイルを追加（置き換え）してください。</li>
+                <li>アプリを再起動すると、「<strong>診療科選択</strong>」でご自身のプロンプトが選べるようになります。</li>
+            </ol>
+
+            <h3 class="text-xl font-bold text-karu-deep mt-6 mb-3 flex items-center gap-2">
+                <span class="inline-block bg-karu-primary text-white text-sm px-2 py-1 rounded">手順B</span>
+                補正辞書の引き継ぎ方法
+            </h3>
+            <ol class="list-decimal list-inside space-y-2 ml-2 mb-3">
+                <li>同様に、古いアプリの <code class="bg-karu-bg px-2 py-0.5 rounded text-karu-deep font-mono text-sm">programs</code> フォルダ内にある <code class="bg-karu-bg px-2 py-0.5 rounded text-karu-deep font-mono text-sm">dictionary.txt</code> をコピーします。</li>
+                <li>新しいアプリの <code class="bg-karu-bg px-2 py-0.5 rounded text-karu-deep font-mono text-sm">programs</code> フォルダ内に入れて置き換えることで、登録した補正辞書を引き継ぐことができます。</li>
+            </ol>
+
+            <div class="bg-karu-soft border border-karu-light/50 rounded p-4 mt-6 text-sm">
+                <p class="font-semibold text-karu-deep mb-1">📁 フォルダ構成イメージ</p>
+                <pre class="font-mono text-xs text-slate-700 overflow-x-auto">Karustep_v32.5/
+├─ Karustep.bat
+├─ Karustep-Lighthouse-v2.json
+└─ programs/
+   ├─ dictionary.txt          ← 補正辞書はここ
+   ├─ 内科.txt                ← 自作プロンプトはここ
+   ├─ 整形外科.txt
+   └─ ...</pre>
+            </div>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section class="bg-karu-bg/40 border border-karu-light/50 rounded-lg p-6 md:p-8 mt-10 text-center">
+            <p class="text-karu-deep mb-2">ご不明な点がございましたら、お気軽にお問い合わせください。</p>
+            <p>
+                <a href="mailto:info@mjs-company.net" class="text-karu-primary font-bold hover:underline">
+                    📧 info@mjs-company.net
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800 text-slate-300 mt-12">
+        <div class="max-w-reading mx-auto px-6 py-6 text-center text-sm">
+            <p>&copy; <span id="year"></span> mjs-com. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="../" class="text-karu-light hover:underline">ダウンロードページへ戻る</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
