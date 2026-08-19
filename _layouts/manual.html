@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'ja-JP' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#075d9c">
+
+    {% seo %}
+    <link rel="icon" href="{{ '/images/icon.png' | relative_url }}" type="image/png">
+    <link rel="stylesheet" href="{{ '/assets/css/manual.css' | relative_url }}">
+  </head>
+  <body id="top" class="manual-page">
+    <header class="manual-hero">
+      <div class="manual-hero__inner">
+        <nav class="manual-breadcrumb" aria-label="パンくずリスト">
+          <a href="{{ '/' | relative_url }}">カルステップ ダウンロード</a>
+          <span aria-hidden="true">/</span>
+          <span>Windows版マニュアル</span>
+        </nav>
+
+        <div class="manual-badges" aria-label="マニュアル種別">
+          <span class="manual-badge manual-badge--windows">Windows版</span>
+          {% if page.manual_label %}<span class="manual-badge">{{ page.manual_label }}</span>{% endif %}
+        </div>
+
+        <h1>{{ page.title }}</h1>
+        {% if page.description %}<p class="manual-hero__lead">{{ page.description }}</p>{% endif %}
+        {% if page.last_updated %}<p class="manual-hero__meta">最終更新日：{{ page.last_updated }}</p>{% endif %}
+      </div>
+    </header>
+
+    <nav class="manual-switcher" aria-label="Windows版マニュアル一覧">
+      <div class="manual-switcher__inner">
+        <a href="{{ '/trial-manual/' | relative_url }}"{% if page.manual_key == 'trial' %} aria-current="page"{% endif %}>トライアル</a>
+        <a href="{{ '/after-trial/' | relative_url }}"{% if page.manual_key == 'azure' %} aria-current="page"{% endif %}>正式版Azure設定</a>
+        <a href="{{ '/update-manual/' | relative_url }}"{% if page.manual_key == 'update' %} aria-current="page"{% endif %}>アップデート</a>
+        <a href="{{ '/changelog/' | relative_url }}">変更履歴</a>
+      </div>
+    </nav>
+
+    <main class="manual-shell">
+      {% if page.toc %}
+      <details class="manual-toc" open>
+        <summary>このマニュアルの内容</summary>
+        <ol>
+          {% for item in page.toc %}
+          <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+          {% endfor %}
+        </ol>
+      </details>
+      {% endif %}
+
+      <article class="manual-content">
+        {{ content }}
+      </article>
+
+      <nav class="manual-footer-nav" aria-label="ページ末尾のナビゲーション">
+        <a href="#top">ページ上部へ戻る</a>
+        <a href="{{ '/' | relative_url }}">ダウンロードページへ戻る</a>
+      </nav>
+    </main>
+
+    <footer class="manual-site-footer">
+      <p>&copy; {{ 'now' | date: '%Y' }} mjs-com. All rights reserved.</p>
+      <p><a href="mailto:karustep@mjs-company.net">お問い合わせ：karustep@mjs-company.net</a></p>
+    </footer>
+
+    <a class="manual-back-to-top" href="#top" aria-label="ページ上部へ戻る">↑</a>
+  </body>
+</html>

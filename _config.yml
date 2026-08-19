@@ -1,0 +1,33 @@
+title: カルステップ
+description: カルステップのダウンロードサイトと各種マニュアル
+lang: ja-JP
+url: https://mjs-com.github.io
+baseurl: /karustep-download-site
+repository: mjs-com/karustep-download-site
+
+theme: jekyll-theme-primer
+
+plugins:
+  - jekyll-default-layout
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+
+optional_front_matter:
+  remove_originals: true
+
+relative_links:
+  enabled: true
+  collections: true
+
+readme_index:
+  enabled: true
+  remove_originals: false
+  with_frontmatter: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LOCAL_PREVIEW.md
+  - preview.command

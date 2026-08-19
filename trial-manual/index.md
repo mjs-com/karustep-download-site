@@ -1,30 +1,55 @@
-最終更新日：2025/07/20（v1.0）
+---
+layout: manual
+title: カルステップ Windows版 トライアルマニュアル
+description: 1週間無料トライアルの初期設定から基本操作、トライアル終了後の流れまでをご案内します。
+last_updated: 2025/07/20（v1.0）
+manual_key: trial
+manual_label: トライアル版
+toc:
+  - label: Googleスプレッドシートの共有
+    href: "#googleスプレッドシートの共有"
+  - label: ライセンス認証
+    href: "#ライセンス認証"
+  - label: APIキーの登録
+    href: "#カルステップへのapi-keyなどの登録トライアル版"
+  - label: カルステップの使用方法
+    href: "#カルステップの使用方法"
+  - label: システムプロンプトと補正辞書
+    href: "#カルステップのシステムプロンプトと補正辞書の編集方法"
+  - label: Chrome拡張機能の使い方
+    href: "#google-chrome拡張機能コピペ-for-カルステップの使い方"
+  - label: トライアル期間終了後
+    href: "#トライアル期間終了後について"
+  - label: お問い合わせ
+    href: "#お問い合わせ"
+---
 
 この度はカルステップの1週間無料トライアルにお申し込みいただき誠にありがとうございます！
 本マニュアルでは、インターネット接続可能なWindows環境でのカルステップ初期設定方法をご紹介いたします。
-ご不明な点がございましたら、担当者 丸山（ [info@mjs-company.net](mailto:info@mjs-company.net) ） までいつでもご相談ください。
+ご不明な点がございましたら、担当者 丸山（ [karustep@mjs-company.net](mailto:karustep@mjs-company.net) ） までいつでもご相談ください。
 
-**【ご注意】トライアル期間について**
-無料トライアル期間（1週間）終了後、端末ライセンスとAPIキーが自動的に無効化されます。継続してご利用をご希望の場合は、正式版のご購入をご検討ください。
+> **ご注意：トライアル期間について**
+>
+> 無料トライアル期間（1週間）終了後、端末ライセンスとAPIキーが自動的に無効化されます。継続してご利用をご希望の場合は、正式版のご購入をご検討ください。
 
-# Googleスプレッドシートの共有
-解説動画： <a href="https://youtu.be/VYT80F02riw" target="_blank" rel="noopener noreferrer">https://youtu.be/VYT80F02riw</a>
+## Googleスプレッドシートの共有
+解説動画： <a href="https://youtu.be/VYT80F02riw" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
-1. 運営（ info@mjs-company.net ）にクリニックで使用されるGoogleアカウント（gmailなど）をお知らせください。（Googleフォームで回答済の方は省略可能です）
+1. 運営（ karustep@mjs-company.net ）にクリニックで使用されるGoogleアカウント（gmailなど）をお知らせください。（Googleフォームで回答済の方は省略可能です）
 2. 運営より、あなた専用のGoogleスプレッドシートの共有連絡がメールで届きます。
 3. 続いて、「スプレッドシートのオーナーとして招待されました」というメールが届くので、「承諾」してください。
 上記の作業により、スプレッドシートの所有権があなたに移譲されます。運営は共有メンバーから抜けるので、このスプレッドシートはあなたのアカウントしか閲覧・編集できない状態となります。
 個人情報保護のため、ご使用になるGoogleアカウントは必ず２段階認証を採用してください。
 
-# ライセンス認証
-解説動画：<a href="https://youtu.be/mWNne-xiKKE" target="_blank" rel="noopener noreferrer">https://youtu.be/mWNne-xiKKE</a>
+## ライセンス認証
+解説動画：<a href="https://youtu.be/mWNne-xiKKE" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 ダウンロードサイト： <a href="https://mjs-com.github.io/karustep-download-site/" target="_blank" rel="noopener noreferrer">https://mjs-com.github.io/karustep-download-site/</a>
 
 1. 上記URLから最新版のzipファイルをダウンロードしてください。
 2. zipファイルを解凍し、「カルステップ.bat」をダブルクリックするとアプリが起動します。
 3. 初回は端末番号（HDIW）の書かれた画面が出てくるので、「メールを送信」ボタンをクリックします。
- ![ライセンス認証画面](images/2025-05-18_120247.png)
+ ![ライセンス認証画面](images/2025-05-18_120247.PNG)
 4. メールに「クリニック名」と「お名前」を追加で記載し、メールを送信してください。
 5. 運営よりライセンス登録完了のメールが届いたら完了です。
 
@@ -36,8 +61,8 @@
 2. **Karustep.bat**（もしくは「Karustep」と表示されているファイル）をダブルクリックすると、アプリが数秒で立ち上がります。
 3. アプリの左側に認証番号が表示されます。その文字列を運営へお知らせください。
 
-# カルステップへのAPI-keyなどの登録（トライアル版）
-解説動画： <a href="https://youtu.be/oCLn4hZQPRw" target="_blank" rel="noopener noreferrer">https://youtu.be/oCLn4hZQPRw</a>
+## カルステップへのAPI-keyなどの登録（トライアル版）
+解説動画： <a href="https://youtu.be/oCLn4hZQPRw" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 トライアル版では、運営が準備したデモ用のAPIキーをご利用いただきます。これにより、Azure関連の複雑な設定作業なしに、すぐにカルステップの全機能をお試しいただけます。
 
@@ -70,10 +95,10 @@
 
 以上で、カルステップへのAPIキーなどの登録は完了です。これでカルステップの全機能がご利用いただけるようになります。設定お疲れ様でした！
 
-# カルステップの使用方法
-カルステップ実演動画： <a href="https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ" target="_blank" rel="noopener noreferrer">https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ</a>
+## カルステップの使用方法
+カルステップ実演動画： <a href="https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
-カルステップ使用方法解説動画： <a href="https://youtu.be/40IkbkaXB9o" target="_blank" rel="noopener noreferrer">https://youtu.be/40IkbkaXB9o</a>
+カルステップ使用方法解説動画： <a href="https://youtu.be/40IkbkaXB9o" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 
 カルステップの基本的な使用方法について、フットスイッチでの操作を軸にご説明します。
@@ -250,8 +275,8 @@
 
 
 
-# カルステップのシステムプロンプトと補正辞書の編集方法
-解説動画： <a href="https://youtu.be/9_5bIymDD3Q" target="_blank" rel="noopener noreferrer">https://youtu.be/9_5bIymDD3Q</a>
+## カルステップのシステムプロンプトと補正辞書の編集方法
+解説動画： <a href="https://youtu.be/9_5bIymDD3Q" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 カルステップでは、AIによる文字起こしや要約の精度、さらには出力される情報の形式を、診療科や状況に合わせてより最適化するために、システムプロンプトと補正辞書を編集する機能を提供しています。
 
@@ -292,7 +317,7 @@
 
 
 ## Google Chrome拡張機能「コピペ for カルステップ」の使い方
-解説動画： <a href="https://youtu.be/1KvAidC7mGs" target="_blank" rel="noopener noreferrer">https://youtu.be/1KvAidC7mGs</a>
+解説動画： <a href="https://youtu.be/1KvAidC7mGs" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 クラークやシュライバーの方が、カルステップで生成された要約をより効率的にカルテへ転記するためのGoogle Chrome拡張機能です。
 
@@ -338,9 +363,9 @@
 
 この流れにより、最新の要約内容をスムーズにカルテへ転記することができます。
 
-# トライアル期間終了後について
+## トライアル期間終了後について
 
-## トライアル期間終了時の動作
+### トライアル期間終了時の動作
 無料トライアル期間（1週間）が終了すると、以下の変更が自動的に行われます：
 
 1. **端末ライセンスの無効化**
@@ -356,22 +381,22 @@
    - これまでに作成された録音ファイルや要約データは、PC内（`C:\temp`フォルダ）に保存されたまま残ります
    - Googleスプレッドシートの所有権はお客様のままです
 
-## トライアル後の備品について
+### トライアル後の備品について
 
-### 正式版をご購入いただく場合
+#### 正式版をご購入いただく場合
 お渡しした備品（フットスイッチなど）は、そのまま継続してご利用ください。追加の手続きは必要ありません。
 
-### ご購入に至らなかった場合
+#### ご購入に至らなかった場合
 大変恐縮でございますが、備品の返送をお願いしております。返送料はユーザー様のご負担となります。レターパックプラス（600円）が現状最安値かと思います。返送先については、トライアル終了時にご案内いたします。
 
-## 正式版購入をご検討の場合
+### 正式版購入をご検討の場合
 
 トライアルをお試しいただき、カルステップの導入をご検討いただける場合は、以下の流れとなります：
 
-### 1. 購入お申し込み
-カルステップ運営（[info@mjs-company.net](mailto:info@mjs-company.net)）までご連絡ください。正式版の購入手続きについてご案内いたします。
+#### 1. 購入お申し込み
+カルステップ運営（[karustep@mjs-company.net](mailto:karustep@mjs-company.net)）までご連絡ください。正式版の購入手続きについてご案内いたします。
 
-### 2. 正式版での設定変更
+#### 2. 正式版での設定変更
 正式版では、以下の点がトライアル版と異なります：
 
 **APIキーについて**
@@ -383,20 +408,20 @@
 - 端末ライセンスが正式版として再発行されます
 - 継続的にご利用いただけるライセンスとなります
 
-### 3. 移行作業
+#### 3. 移行作業
 正式版への移行時は、以下のデータがそのまま引き継がれます：
 - これまでの録音ファイル（`C:\temp`フォルダ内）
 - Googleスプレッドシートのデータ
 - システムプロンプトや補正辞書のカスタマイズ内容
 
-## トライアルご利用の皆様へのお願い
+### トライアルご利用の皆様へのお願い
 
 カルステップの改善のため、トライアル期間終了後に以下のご協力をお願いしております：
 
-### 1. Web面談でのフィードバック
+#### 1. Web面談でのフィードバック
 ご購入の有無に関わらず、トライアル終了後に短時間のWeb面談でご感想をお聞かせください。いただいたご意見は、今後の製品改良の貴重な参考とさせていただきます。面談の日程については、トライアル期間終了前にメールでご相談させていただきます。
 
-### 2. X（旧Twitter）での感想投稿
+#### 2. X（旧Twitter）での感想投稿
 カルステップのご感想をX（旧Twitter）でシェアをお願いいたします。投稿の際は「#カルステップ」を添えて、以下の投稿を引用リポストしてください。
 
 対象投稿： <a href="https://x.com/Dr_kurukuru/status/1945487347409412533" target="_blank" rel="noopener noreferrer">https://x.com/Dr_kurukuru/status/1945487347409412533</a>
@@ -408,4 +433,4 @@
 トライアル期間中やご購入に関するご質問は、いつでもお気軽にお問い合わせください。
 
 **連絡先：** カルステップ運営 丸山  
-**メールアドレス：** [info@mjs-company.net](mailto:info@mjs-company.net)
+**メールアドレス：** [karustep@mjs-company.net](mailto:karustep@mjs-company.net)

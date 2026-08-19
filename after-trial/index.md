@@ -1,6 +1,30 @@
-最終更新日：2025/07/21（v1.1）
-
-# カルステップ正式版 Azure設定マニュアル
+---
+layout: manual
+title: カルステップ Windows版 正式版Azure設定マニュアル
+description: トライアル終了後に正式版をご利用いただくためのAzure環境とAPIキーの設定手順です。
+last_updated: 2025/07/21（v1.1）
+manual_key: azure
+manual_label: 正式版Azure設定
+toc:
+  - label: ご購入いただいた皆様へのお願い
+    href: "#ご購入いただいた皆様へのお願い"
+  - label: 備品について
+    href: "#備品について"
+  - label: Azure環境の設定手順
+    href: "#azure環境の設定手順"
+  - label: Azureアカウント開設
+    href: "#azureアカウント開設"
+  - label: 2段階認証の設定
+    href: "#2段階認証の設定"
+  - label: Azureの委任手続き
+    href: "#azureの委任手続き"
+  - label: APIキーの登録
+    href: "#カルステップへのapi-keyなどの登録"
+  - label: 月額利用料の確認
+    href: "#カルステップの月額利用料についてazure利用料の確認方法"
+  - label: アップデートについて
+    href: "#カルステップのアップデートについて"
+---
 
 この度はカルステップをご購入いただき、誠にありがとうございます！
 本マニュアルでは、正式版でのMicrosoft Azure環境の設定手順をご説明いたします。
@@ -21,13 +45,13 @@
 
 ---
 
-# Azure環境の設定手順
+## Azure環境の設定手順
 
 カルステップ正式版では、お客様専用のMicrosoft Azureアカウントを開設していただき、APIの利用料金をお客様にご負担いただく形となります。
 以下、設定手順をご説明いたします。
 
-## Azureアカウント開設
-解説動画： <a href="https://youtu.be/2_lAmjdG-D8" target="_blank" rel="noopener noreferrer">https://youtu.be/2_lAmjdG-D8</a>
+### Azureアカウント開設
+解説動画： <a href="https://youtu.be/2_lAmjdG-D8" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 1.  Googleなどの検索エンジンで「Azure」と検索し、「Microsoft Azure」の公式サイトをクリックしてください。
 2.  Azureのページが表示されたら、「Azure を無料でお試しください」をクリックします。
@@ -44,8 +68,8 @@
 
 上記の手順が完了すると、Azureアカウントの登録は終了です。これで、Azureの各種サービスが利用可能な状態になります。
 
-## 2段階認証の設定
-解説動画： <a href="https://youtu.be/2qsM79MaTkQ" target="_blank" rel="noopener noreferrer">https://youtu.be/2qsM79MaTkQ</a>
+### 2段階認証の設定
+解説動画： <a href="https://youtu.be/2qsM79MaTkQ" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 Azureアカウントのセキュリティを強化するため、2段階認証の設定を強く推奨いたします。
 
@@ -67,12 +91,12 @@ Azureアカウントのセキュリティを強化するため、2段階認証�
 
 以上で、2段階認証の設定は完了です。これにより、アカウントのセキュリティが向上します。
 
-## Azureの委任手続き
-解説動画： <a href="https://youtu.be/FyNI4saCLik" target="_blank" rel="noopener noreferrer">https://youtu.be/FyNI4saCLik</a>
+### Azureの委任手続き
+解説動画： <a href="https://youtu.be/FyNI4saCLik" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 カルステップでは、Azureサービスによる文字起こしや生成AIの機能を利用します。これらの詳細な設定作業をカルステップ運営にお任せいただくための委任設定についてご説明します。
 
-### 1. サブスクリプション名の変更
+#### 1. サブスクリプション名の変更
 1.  Azureポータルの検索バーに「サブスク」と入力し、表示された「サブスクリプション」を選択してください。
 2.  リストに表示されている「Azure サブスクリプション 1」（または類似の名称のサブスクリプション）をクリックします。
     > **【重要】 サブスクリプションが一覧にない場合**
@@ -91,7 +115,7 @@ Azureアカウントのセキュリティを強化するため、2段階認証�
 * **変更理由：** カルステップ運営側では複数のアカウントを管理しております。誤操作を防ぎ、お客様のアカウントを明確に識別するために、分かりやすい名称に変更をお願いいたします。
 
 
-### 2. Azure Lighthouseの設定
+#### 2. Azure Lighthouseの設定
 1.  Azureポータルの検索バーに英語で「Lighthouse」と入力し、表示された灯台マークの「Azure Lighthouse」を選択してください。
 2.  Azure Lighthouseの画面が表示されたら、右側にある「サービスプロバイダーのオファーの表示」を選択し、続いて、画面中央の「サービスプロバイダーのオファーの表示」ボタンをクリックしてください。
 3.  画面左上にある「オファーの追加」をクリックし、ドロップダウンメニューから「テンプレート経由で追加」を選択してください。
@@ -106,7 +130,7 @@ Azureアカウントのセキュリティを強化するため、2段階認証�
 8.  検証が成功すると、画面下部に青色の「作成」ボタンが表示されますので、クリックしてください。（一時的に白い画面になることがありますが、エラーではありませんのでしばらくお待ちください。）
 9.  「デプロイが完了しました」というメッセージが表示されたら、この作業は完了です。
 
-### 3. 委任の確認
+#### 3. 委任の確認
 1.  再度Azureポータルの検索バーから「Azure Lighthouse」を検索し、選択します。
 2.  右側の「サービスプロバイダーのオファーの表示」を選択し、次に右側にある「委任の表示」ボタンをクリックしてください。
 3.  表示されたリストの上部にある「最新の情報に更新」ボタンをクリックします。
@@ -117,12 +141,12 @@ Azureアカウントのセキュリティを強化するため、2段階認証�
     * **ロールの割り当て：** 「共同作成者」と「削除ロール」
 
 お疲れ様でした。これでAzureの委任手続きは完了です。
-最後に、カルステップ運営サイドでは委任された通知が来ないため、委任手続きが完了したことをカルステップ運営（[info@mjs-company.net](mailto:info@mjs-company.net)）までご連絡ください。
+最後に、カルステップ運営サイドでは委任された通知が来ないため、委任手続きが完了したことをカルステップ運営（[karustep@mjs-company.net](mailto:karustep@mjs-company.net)）までご連絡ください。
 
 ご連絡をいただき次第、正式版のAPI-keyを発行させていただきます。お手数をおかけしますが、どうぞよろしくお願い致します。
 
 ## カルステップへのAPI-keyなどの登録
-解説動画： <a href="https://youtu.be/oCLn4hZQPRw" target="_blank" rel="noopener noreferrer">https://youtu.be/oCLn4hZQPRw</a>
+解説動画： <a href="https://youtu.be/oCLn4hZQPRw" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 Azureの委任手続きが完了したことをカルステップ運営が確認次第、文字起こしや要約に使用するAPI-keyを発行いたします。発行されたAPI-keyなど、カルステップに登録が必要な情報は、まとめてHTML形式の添付ファイルとしてメールでお送りします。
 
@@ -153,7 +177,7 @@ Azureの委任手続きが完了したことをカルステップ運営が確認
 基本操作に加え、予診室から診察室への患者情報の引き継ぎなど、便利な追加機能の使用方法は[カルステップ操作マニュアル「7. 便利な追加機能」](https://mjs-com.github.io/karustep-download-site/manual/#7-%E4%BE%BF%E5%88%A9%E3%81%AA%E8%BF%BD%E5%8A%A0%E6%A9%9F%E8%83%BD)をご確認ください。
 
 ## カルステップの月額利用料について（Azure利用料の確認方法）
-解説動画： <a href="https://youtu.be/2DVJKqh7aqU" target="_blank" rel="noopener noreferrer">https://youtu.be/2DVJKqh7aqU</a>
+解説動画： <a href="https://youtu.be/2DVJKqh7aqU" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 正式版では、カルステップで利用するAzureサービスの月額利用料（ランニングコスト）がお客様のAzureアカウントに直接請求されます。利用料金を把握する方法についてご説明します。
 
