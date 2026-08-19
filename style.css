@@ -52,6 +52,44 @@ main {
     margin: 0 auto; /* 中央揃え */
 }
 
+.platform-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 0 20px;
+    padding: 6px;
+    border: 1px solid #c9ddea;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.platform-switcher a,
+.platform-switcher span {
+    flex: 1;
+    max-width: 220px;
+    padding: 9px 16px;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.platform-switcher a {
+    color: #005a9e;
+    background-color: #f4f9fd;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.platform-switcher a:hover {
+    background-color: #e7f3fe;
+}
+
+.platform-switcher [aria-current="page"] {
+    color: #fff;
+    background-color: #005a9e;
+}
+
 section {
     padding: 20px;
     margin-bottom: 20px;
@@ -100,6 +138,12 @@ section h2 {
     margin-top: 15px;
     font-size: 0.9em;
     color: #555;
+}
+
+#download .security-note {
+    margin-top: 8px;
+    color: #315b72;
+    font-size: 0.85em;
 }
 
 #guides .guide-links {
@@ -221,7 +265,11 @@ footer {
         font-size: 1em;
         width: 90%; /* 小画面ではボタン幅を広げる */
     }
+    .platform-switcher a,
+    .platform-switcher span {
+        padding: 8px 10px;
+    }
     #features li {
         padding-left: 15px;
     }
-} 
+}
