@@ -1,8 +1,16 @@
 # ローカルプレビュー
 
-GitHub Pagesへpushする前に、MarkdownとCSSをMacBook上で確認できます。
+GitHub Pagesへpushする前に、MarkdownとCSSをローカルで確認できます。
 
-## 起動方法
+## Windowsでの起動方法
+
+リポジトリ直下の `preview-windows.bat` をダブルクリックしてください。
+
+初回のみ必要なNode.jsパッケージを自動で準備します。サーバーが起動すると、ブラウザで <http://127.0.0.1:4000/> が自動的に開きます。
+
+終了するときは、起動した黒い画面で `Ctrl` + `C` を押してください。
+
+## Macでの起動方法
 
 Finderでリポジトリを開き、`preview.command`をダブルクリックしてください。
 

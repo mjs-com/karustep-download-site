@@ -5,7 +5,8 @@
   "description": "カルステップ ダウンロードサイトのビルドスクリプト群。GitHub Pagesでホスティングする静的サイトの補助スクリプトです。",
   "type": "module",
   "scripts": {
-    "build:changelog": "node scripts/generate-changelog.mjs"
+    "build:changelog": "node scripts/generate-changelog.mjs",
+    "preview:windows": "node scripts/preview-server.mjs"
   },
   "devDependencies": {
     "marked": "^12.0.2"
