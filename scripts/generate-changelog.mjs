@@ -32,8 +32,16 @@ const PLATFORM_CONFIGS = [
     outputPath: join(__dirname, '..', 'changelog', 'index.html'),
     faviconHref: '../images/icon.png',
     downloadHref: '../',
+    metaDescription: 'カルステップ バージョンごとの変更履歴。GitHub Releasesから自動生成しています。',
+    pageTitle: '変更履歴 | カルステップ',
+    backLabel: 'カルステップ ダウンロードページへ戻る',
+    heading: '変更履歴',
+    subtitle: 'バージョンごとの変更内容を新しい順に掲載しています',
+    footerDownloadLabel: 'ダウンロードページへ戻る',
     windowsHref: './',
     macHref: '../mac/changelog/',
+    trialManualHref: '../trial-manual/',
+    azureManualHref: '../after-trial/',
     updateManualHref: '../update-manual/',
   },
   {
@@ -44,9 +52,17 @@ const PLATFORM_CONFIGS = [
     outputPath: join(__dirname, '..', 'mac', 'changelog', 'index.html'),
     faviconHref: '../../images/icon.png',
     downloadHref: '../',
+    metaDescription: 'カルステップ Mac版のバージョンごとの変更履歴。GitHub Releasesから自動生成しています。',
+    pageTitle: 'Mac版 変更履歴 | カルステップ',
+    backLabel: 'Mac版ダウンロードページへ戻る',
+    heading: 'Mac版 変更履歴',
+    subtitle: 'Mac版の変更内容を新しい順に掲載しています',
+    footerDownloadLabel: 'Mac版ダウンロードページへ戻る',
     windowsHref: '../../changelog/',
     macHref: './',
-    updateManualHref: null,
+    trialManualHref: '../trial-manual/',
+    azureManualHref: '../after-trial/',
+    updateManualHref: '../update-manual/',
   },
 ];
 
@@ -102,12 +118,6 @@ function escapeHtml(value) {
     .replace(/'/g, '&#39;');
 }
 
-function normalizeLegacyContacts(body) {
-  return body
-    .replaceAll('info@mjs-company.net', 'karustep@mjs-company.net')
-    .replaceAll('mjsc0mpa2@gmail.com', 'karustep@mjs-company.net');
-}
-
 function renderRelease(release, config) {
   const rawTag = release.tag_name;
   const tag = escapeHtml(config.displayTag(rawTag));
@@ -115,7 +125,7 @@ function renderRelease(release, config) {
   const dateDisplay = formatDate(release.published_at);
   const dateIso = escapeHtml(release.published_at);
   const body = release.body && release.body.trim().length > 0
-    ? normalizeLegacyContacts(release.body)
+    ? release.body
     : '_（このリリースには変更内容の記載がありません）_';
   const renderedBody = marked.parse(body);
   const collapse = shouldCollapse(body);
@@ -161,11 +171,28 @@ function renderPlatformTabs(config) {
     </nav>`;
 }
 
+function renderManualTabs(config) {
+  return `
+    <nav aria-label="${config.label}マニュアル一覧" class="sticky top-0 z-20 mt-6 overflow-x-auto border-y border-sky-200 bg-white/95 shadow-sm backdrop-blur">
+        <div class="mx-auto flex w-max min-w-max max-w-reading">
+            <a href="${config.trialManualHref}" class="border-b-[3px] border-transparent px-4 py-3 text-sm font-bold text-slate-600 hover:bg-karu-bg hover:text-karu-deep">トライアル</a>
+            <a href="${config.azureManualHref}" class="border-b-[3px] border-transparent px-4 py-3 text-sm font-bold text-slate-600 hover:bg-karu-bg hover:text-karu-deep">正式版Azure設定</a>
+            <a href="${config.updateManualHref}" class="border-b-[3px] border-transparent px-4 py-3 text-sm font-bold text-slate-600 hover:bg-karu-bg hover:text-karu-deep">アップデート</a>
+            <span aria-current="page" class="border-b-[3px] border-karu-primary bg-karu-bg px-4 py-3 text-sm font-bold text-karu-deep">変更履歴</span>
+        </div>
+    </nav>`;
+}
+
 function buildHtml(releases, config) {
-  const newestRelease = releases[0];
-  const lastReleaseHtml = newestRelease
-    ? `<p class="text-sm text-slate-500 mb-6">最終リリース公開日: <time datetime="${escapeHtml(newestRelease.published_at)}">${formatDate(newestRelease.published_at)}</time></p>`
-    : '';
+  const generatedAt = new Date().toISOString();
+  const generatedAtDisplay = new Date().toLocaleString('ja-JP', {
+    timeZone: 'Asia/Tokyo',
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit',
+  });
+  const lastUpdatedHtml = `<p class="text-sm text-slate-500 mb-6">
+            最終更新: <time datetime="${generatedAt}">${generatedAtDisplay}</time>
+        </p>`;
   const articles = releases.length > 0
     ? releases.map(release => renderRelease(release, config)).join('\n')
     : `<section class="rounded-lg border border-karu-bg bg-white p-8 text-center shadow-sm">
@@ -181,8 +208,8 @@ function buildHtml(releases, config) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="カルステップ ${config.label}のバージョンごとの変更履歴。GitHub Releasesから自動生成しています。">
-    <title>${config.label} 変更履歴 | カルステップ</title>
+    <meta name="description" content="${config.metaDescription}">
+    <title>${config.pageTitle}</title>
     <link rel="icon" href="${config.faviconHref}" type="image/png">
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <script>
@@ -222,20 +249,21 @@ function buildHtml(releases, config) {
 <body class="bg-karu-soft text-slate-800 font-sans leading-relaxed antialiased">
     <header class="bg-karu-primary text-white shadow-md">
         <div class="max-w-reading mx-auto px-6 py-8">
-            <p class="text-sm opacity-90 mb-2"><a href="${config.downloadHref}" class="hover:underline">← ${config.label}ダウンロードページへ戻る</a></p>
-            <h1 class="text-3xl md:text-4xl font-bold">${config.label} 変更履歴</h1>
-            <p class="mt-2 text-karu-bg">${config.label}の変更内容を新しい順に掲載しています</p>
+            <p class="text-sm opacity-90 mb-2"><a href="${config.downloadHref}" class="hover:underline">← ${config.backLabel}</a></p>
+            <h1 class="text-3xl md:text-4xl font-bold">${config.heading}</h1>
+            <p class="mt-2 text-karu-bg">${config.subtitle}</p>
         </div>
     </header>
 ${renderPlatformTabs(config)}
+${renderManualTabs(config)}
     <main class="max-w-reading mx-auto px-6 py-10">
-        ${lastReleaseHtml}
+        ${lastUpdatedHtml}
 ${articles}
     </main>
     <footer class="bg-slate-800 text-slate-300 mt-12">
         <div class="max-w-reading mx-auto px-6 py-6 text-center text-sm">
             <p>&copy; <span id="year"></span> mjs-com. All rights reserved.</p>
-            <p class="mt-2"><a href="${config.downloadHref}" class="text-karu-light hover:underline">${config.label}ダウンロードページへ戻る</a>${updateManualLink}</p>
+            <p class="mt-2"><a href="${config.downloadHref}" class="text-karu-light hover:underline">${config.footerDownloadLabel}</a>${updateManualLink}</p>
         </div>
     </footer>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>

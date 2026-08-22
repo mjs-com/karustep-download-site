@@ -10,17 +10,36 @@
     <link rel="icon" href="{{ '/images/icon.png' | relative_url }}" type="image/png">
     <link rel="stylesheet" href="{{ '/assets/css/manual.css' | relative_url }}">
   </head>
+  {% assign is_mac_manual = false %}
+  {% if page.platform == 'mac' %}{% assign is_mac_manual = true %}{% endif %}
+  {% if is_mac_manual %}
+    {% assign download_path = '/mac/' %}
+    {% assign trial_path = '/mac/trial-manual/' %}
+    {% assign azure_path = '/mac/after-trial/' %}
+    {% assign update_path = '/mac/update-manual/' %}
+    {% assign changelog_path = '/mac/changelog/' %}
+    {% assign platform_label = 'Mac版' %}
+    {% assign platform_class = 'manual-badge--mac' %}
+  {% else %}
+    {% assign download_path = '/' %}
+    {% assign trial_path = '/trial-manual/' %}
+    {% assign azure_path = '/after-trial/' %}
+    {% assign update_path = '/update-manual/' %}
+    {% assign changelog_path = '/changelog/' %}
+    {% assign platform_label = 'Windows版' %}
+    {% assign platform_class = 'manual-badge--windows' %}
+  {% endif %}
   <body id="top" class="manual-page">
     <header class="manual-hero">
       <div class="manual-hero__inner">
         <nav class="manual-breadcrumb" aria-label="パンくずリスト">
-          <a href="{{ '/' | relative_url }}">カルステップ ダウンロード</a>
+          <a href="{{ download_path | relative_url }}">カルステップ ダウンロード</a>
           <span aria-hidden="true">/</span>
-          <span>Windows版マニュアル</span>
+          <span>{{ platform_label }}マニュアル</span>
         </nav>
 
         <div class="manual-badges" aria-label="マニュアル種別">
-          <span class="manual-badge manual-badge--windows">Windows版</span>
+          <span class="manual-badge {{ platform_class }}">{{ platform_label }}</span>
           {% if page.manual_label %}<span class="manual-badge">{{ page.manual_label }}</span>{% endif %}
         </div>
 
@@ -30,12 +49,12 @@
       </div>
     </header>
 
-    <nav class="manual-switcher" aria-label="Windows版マニュアル一覧">
+    <nav class="manual-switcher" aria-label="{{ platform_label }}マニュアル一覧">
       <div class="manual-switcher__inner">
-        <a href="{{ '/trial-manual/' | relative_url }}"{% if page.manual_key == 'trial' %} aria-current="page"{% endif %}>トライアル</a>
-        <a href="{{ '/after-trial/' | relative_url }}"{% if page.manual_key == 'azure' %} aria-current="page"{% endif %}>正式版Azure設定</a>
-        <a href="{{ '/update-manual/' | relative_url }}"{% if page.manual_key == 'update' %} aria-current="page"{% endif %}>アップデート</a>
-        <a href="{{ '/changelog/' | relative_url }}">変更履歴</a>
+        <a href="{{ trial_path | relative_url }}"{% if page.manual_key == 'trial' %} aria-current="page"{% endif %}>トライアル</a>
+        <a href="{{ azure_path | relative_url }}"{% if page.manual_key == 'azure' %} aria-current="page"{% endif %}>正式版Azure設定</a>
+        <a href="{{ update_path | relative_url }}"{% if page.manual_key == 'update' %} aria-current="page"{% endif %}>アップデート</a>
+        <a href="{{ changelog_path | relative_url }}">変更履歴</a>
       </div>
     </nav>
 
@@ -57,7 +76,7 @@
 
       <nav class="manual-footer-nav" aria-label="ページ末尾のナビゲーション">
         <a href="#top">ページ上部へ戻る</a>
-        <a href="{{ '/' | relative_url }}">ダウンロードページへ戻る</a>
+        <a href="{{ download_path | relative_url }}">ダウンロードページへ戻る</a>
       </nav>
     </main>
 
