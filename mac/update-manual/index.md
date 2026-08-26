@@ -3,7 +3,7 @@ layout: manual
 platform: mac
 title: カルステップ Mac版 アップデートマニュアル
 description: 公証済みDMGからMac版を安全に更新し、設定やプロンプトを引き継ぐ手順をご案内します。
-last_updated: 2026/08/22（v3.2）
+last_updated: 2026/08/26（v3.2）
 manual_key: update
 manual_label: アップデート
 toc:
@@ -74,7 +74,7 @@ Azure Speech Key、Azure OpenAI API Key、Azure OpenAI Endpoint、Azure Function
 1. 新しいMacで [Mac版ダウンロードページ](../) を開き、最新版のDMGをダウンロードします。
 2. DMG内の「Karustep.app」を「アプリケーション」へコピーします。
 3. 新しいMacでカルステップを起動し、表示された新しい認証番号を運営へ送ります。ライセンス登録の連絡が届いたら、アプリを起動し直します。
-4. macOSのマイク・アクセシビリティ・入力監視を許可し、「設定」→「API-keyの登録」でAPI情報を新しく登録します。保存後に画面を開き直し、「一括接続テスト」を実行します。
+4. macOSのマイク・アクセシビリティ・入力監視を許可し、「設定」→「API-keyの登録」でAPI情報を新しく入力して「一括接続テスト」を実行します。入力内容はテスト開始時に保存されます。
 5. 旧Macと新しいMacのカルステップを両方とも終了します。
 6. 旧MacのFinderで「移動」→「フォルダへ移動」を選び、`~/Library/Application Support/Karustep/Prompts/` を開きます。
 7. 次のうち、引き継ぎたいものだけをUSBメモリなどの安全な媒体へコピーします。
