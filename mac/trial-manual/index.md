@@ -66,7 +66,7 @@ toc:
 
 ## インストールと初回起動
 
-解説動画：<a href="https://youtu.be/mWNne-xiKKE" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+解説動画：<a href="https://www.youtube.com/watch?v=DSTEsjbeaxo" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 ダウンロードページ：<a href="https://mjs-com.github.io/karustep-download-site/mac/" target="_blank" rel="noopener noreferrer">Mac版ダウンロードページを開く</a>
 
