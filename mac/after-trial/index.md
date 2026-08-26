@@ -107,6 +107,12 @@ Azure側への反映には最大15分程度かかることがあります。す�
 
 ## 正式版APIキーの登録
 
+API-key（AIパスワード）の登録（旧HTML版）：<a href="https://www.youtube.com/watch?v=oCLn4hZQPRw&amp;t=2s" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+
+> **現在の登録方法について**
+>
+> この動画は旧HTML版の登録手順です。現在は、運営から届くパスワード付きExcelファイルを使用する方法が最新です。APIキーは、以下のExcelファイル版の手順に従って登録してください。
+
 運営から、正式版API情報を記載したパスワード付きExcelファイルと、そのファイルを開くためのパスワードが別々のメールで届きます。
 
 1. 添付されているパスワード付きExcelファイルをMacへ保存します。
