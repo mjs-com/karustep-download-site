@@ -209,7 +209,9 @@ Azureの委任手続きが完了したことをカルステップ運営が確認
 
 カルステップ実演動画： <a href="https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
-カルステップ使用方法解説動画： <a href="https://youtu.be/40IkbkaXB9o" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+カルステップ基本使用方法解説動画： <a href="https://youtu.be/40IkbkaXB9o" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+
+カルステップ操作・機能詳細動画： <a href="https://www.youtube.com/watch?v=BoI_CB2cQZI" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 
 カルステップの基本的な使用方法について、フットスイッチでの操作を軸にご説明します。

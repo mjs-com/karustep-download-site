@@ -177,6 +177,12 @@ Azureの委任手続きが完了したことをカルステップ運営が確認
 
 基本操作に加え、予診室から診察室への患者情報の引き継ぎなど、便利な追加機能の使用方法は[カルステップ操作マニュアル「7. 便利な追加機能」](https://mjs-com.github.io/karustep-download-site/manual/#7-%E4%BE%BF%E5%88%A9%E3%81%AA%E8%BF%BD%E5%8A%A0%E6%A9%9F%E8%83%BD)をご確認ください。
 
+カルステップ実演動画： <a href="https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+
+カルステップ基本使用方法解説動画： <a href="https://youtu.be/40IkbkaXB9o" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+
+カルステップ操作・機能詳細動画： <a href="https://www.youtube.com/watch?v=BoI_CB2cQZI" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+
 ## カルステップの月額利用料について（Azure利用料の確認方法）
 解説動画： <a href="https://youtu.be/2DVJKqh7aqU" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 

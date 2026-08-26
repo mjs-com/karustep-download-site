@@ -126,6 +126,12 @@ APIキーはMacのキーチェーンへ安全に保存されます。添付さ�
 
 基本操作とmacOSの権限設定は [Mac版トライアル・基本操作マニュアル](../trial-manual/#macosの権限設定) をご確認ください。
 
+カルステップ実演動画： <a href="https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+
+カルステップ基本使用方法解説動画： <a href="https://youtu.be/40IkbkaXB9o" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+
+カルステップ操作・機能詳細動画： <a href="https://www.youtube.com/watch?v=BoI_CB2cQZI" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+
 ## Azure利用料金の確認
 
 解説動画：<a href="https://youtu.be/2DVJKqh7aqU" target="_blank" rel="noopener noreferrer">解説動画を見る</a>

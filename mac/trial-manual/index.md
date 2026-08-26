@@ -184,6 +184,12 @@ APIキーは設定ファイルへ平文保存されず、**macOSのキーチェ�
 
 </div>
 
+カルステップ実演動画： <a href="https://youtu.be/qqGLhJniyZE?si=pFsk52EI-o6-M3bZ" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+
+カルステップ基本使用方法解説動画： <a href="https://youtu.be/40IkbkaXB9o" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+
+カルステップ操作・機能詳細動画： <a href="https://www.youtube.com/watch?v=BoI_CB2cQZI" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+
 ### 録音から要約まで
 
 1. 左側に使用するシステムプロンプト名が表示されていることを確認します。
