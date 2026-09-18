@@ -270,6 +270,16 @@ const server = http.createServer(async (request, response) => {
     }
 
     const extension = path.extname(resolved.file).toLowerCase();
+    if (extension === ".html") {
+      const source = await readFile(resolved.file, "utf8");
+      const { data, body } = parseFrontMatter(source);
+
+      if (data.layout === "manual") {
+        sendText(response, 200, renderManualLayout(data, body), "text/html; charset=utf-8");
+        return;
+      }
+    }
+
     response.writeHead(200, {
       "Cache-Control": "no-store",
       "Content-Type": MIME_TYPES[extension] || "application/octet-stream",
