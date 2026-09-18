@@ -323,7 +323,9 @@ APIキーは設定ファイルへ平文保存されず、**macOSのキーチェ�
 
 要約が完了すると、設定したGoogleスプレッドシートへ結果が送信されます。「要約を表示」から対象のスプレッドシートを開けます。
 
-Google Chrome拡張機能「コピペ for カルステップ」：<a href="https://youtu.be/1KvAidC7mGs" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
+Google Chrome拡張機能「コピペ for カルステップ」を使うと、要約をワンクリックでコピーできます。設定画面にはスプレッドシートの**URL全体**を登録し、コピー内容は「**すべて（H2）**」または「**項目を選ぶ**」（Fact：E2・Assessment：F2・ToDo：G2）から選びます。3項目すべてを選ぶとH2をコピーします。
+
+[設定・使い方の手順]({{ '/trial-manual/' | relative_url }}#google-chrome拡張機能コピペ-for-カルステップの使い方)（Macでの貼り付けは `Command+V`）／<a href="https://youtu.be/1KvAidC7mGs" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 - 新しい要約は一覧の上側へ追加されます。
 - 月別のタブでは、月間の件数や日ごとの記録を確認できます。
