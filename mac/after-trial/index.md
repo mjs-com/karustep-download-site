@@ -96,7 +96,7 @@ Azureアカウントを保護するため、2段階認証を必ず設定して�
 2. 「最新の情報に更新」をクリックします。
 3. 次の内容が表示されていることを確認します。
    - サブスクリプション名：設定したクリニック名
-   - オファー名：Karustep_Lighthouse_Template
+   - オファー名：Karustep_Lighthouse-v2
    - サービスプロバイダー：合同会社MJSカンパニー
    - ロールの割り当て：運営から指定された「共同作成者」と「マネージドサービス登録割り当て削除ロール」
 4. 完了したことを [karustep@mjs-company.net](mailto:karustep@mjs-company.net) へご連絡ください。Azureから運営へ自動通知は届きません。
