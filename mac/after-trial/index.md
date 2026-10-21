@@ -3,7 +3,7 @@ layout: manual
 platform: mac
 title: カルステップ Mac版 正式版Azure設定マニュアル
 description: トライアル終了後にMac版の正式版をご利用いただくためのAzure環境とAPIキーの設定手順です。
-last_updated: 2026/08/26（v3.2）
+last_updated: 2026/10/22（v3.2）
 manual_key: azure
 manual_label: 正式版Azure設定
 toc:
@@ -35,6 +35,10 @@ toc:
 
 ## Azureアカウント開設
 
+> **【重要】Azureアカウント作成・委任手続きを行うパソコンについて**
+>
+> Azureアカウントの作成と委任手続きは、**インターネットに接続できる個人のパソコン**で行ってください。カルステップを使用するオンプレミス端末で登録する必要はありません。
+
 解説動画：<a href="https://youtu.be/2_lAmjdG-D8" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 1. <a href="https://azure.microsoft.com/ja-jp/" target="_blank" rel="noopener noreferrer">Microsoft Azure公式サイト</a>を開き、「Azureを無料で試す」から登録を始めます。
@@ -63,6 +67,8 @@ Azureアカウントを保護するため、2段階認証を必ず設定して�
 4. 一度サインアウト・サインインし直し、追加認証を利用できることを確認します。
 
 ## Azure Lighthouseの委任
+
+> **委任手続きも、インターネットに接続できる個人のパソコンで行ってください。**
 
 解説動画：<a href="https://youtu.be/FyNI4saCLik" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 

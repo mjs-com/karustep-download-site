@@ -2,7 +2,7 @@
 layout: manual
 title: カルステップ Windows版 正式版・操作マニュアル
 description: 正式版の初期設定、Azure設定、基本操作、応用機能、アップデート方法をご案内します。
-last_updated: 2026/08/26（v2.0）
+last_updated: 2026/10/22（v2.0）
 manual_key: full
 manual_label: 正式版・操作
 toc:
@@ -60,6 +60,11 @@ toc:
 
 ## Azureアカウント開設と委任の設定
 ### Azureアカウント開設
+
+> **【重要】Azureアカウント作成・委任手続きを行うパソコンについて**
+>
+> Azureアカウントの作成と委任手続きは、**インターネットに接続できる個人のパソコン**で行ってください。カルステップを使用するオンプレミス端末で登録する必要はありません。
+
 解説動画： <a href="https://youtu.be/2_lAmjdG-D8" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 1.  Googleなどの検索エンジンで「Azure」と検索し、「Microsoft Azure」の公式サイトをクリックしてください。
@@ -97,6 +102,9 @@ Azureアカウントのセキュリティを強化するため、2段階認証�
 以上で、2段階認証の設定は完了です。これにより、アカウントのセキュリティが向上します。
 
 ### Azureの委任手続き
+
+> **委任手続きも、インターネットに接続できる個人のパソコンで行ってください。**
+
 解説動画： <a href="https://youtu.be/FyNI4saCLik" target="_blank" rel="noopener noreferrer">解説動画を見る</a>
 
 カルステップでは、Azureサービスによる文字起こしや生成AIの機能を利用します。これらの詳細な設定作業をカルステップ運営にお任せいただくための委任設定についてご説明します。
